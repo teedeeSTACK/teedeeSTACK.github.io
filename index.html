@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+    <title>The Gym Bag</title>
+</head>
+<body>
+<main>
+    <header class="header">
+        <div class="topLeft"><img src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo"></div>
+        <div class="searchBar"><input type="text" placeholder="Search over 10,000 products"><button type="submit">Submit</button></div>
+        <div class="topRight">
+            <a id="signUpBtn" href="#">Sign Up</a>
+            <a href="#">Login</a>
+            <a href="#"><img class="shoppingCart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQ6zjUCsug-MBlhhfZAuWSgyIW4Ue2LnedZiVvhjFBA&s"></a>
+        </div>
+    </header>
+
+    <section class = "navBar">
+        <div class = "dropdown">
+            <div class="menuTitles">Categories</div>
+            <div class="dropdown-content">
+                    <a href="">Protein Powder</a>
+                    <a href="">BCAA</a>
+                    <a href="">Creatine Monohydrate</a>
+                    <a href="">Weight Gainer</a>
+                    <a href="">Weight Loss</a>
+                    <a href="">Vitamins</a>
+                    <a href="">Gym Accessories</a>
+                    <a href="">Apparel</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <div class="menuTitles">Brands</div>
+            <div class="dropdown-content">
+                    <a href="">FitFuel Labs</a>
+                    <a href="">MuscleVibe Nutrition</a>
+                    <a href="">PowerPulse Provisions</a>
+                    <a href="">FlexElite Wellness</a>
+                    <a href="">GymGuardian Nutrition</a>
+                    <a href="">IronZen Supplements</a>
+                    <a href="">PeakPulse Performance</a>
+                    <a href="">EpicStrength Essentials</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <div class="menuTitles">New</div>
+            <div class="dropdown-content">
+                    <a href="">Protein Powder</a>
+                    <a href="">BCAA</a>
+                    <a href="">Creatine Monohydrate</a>
+                    <a href="">Weight Gainer</a>
+                    <a href="">Weight Loss</a>
+                    <a href="">Vitamins</a>
+                    <a href="">Gym Accessories</a>
+                    <a href="">Apparel</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <div class="menuTitles"><a href="#specials">Specials</a></div>
+        </div>
+
+         <div class = "dropdown">
+            <div class="menuTitles">Gym Talk</div>
+                <div class="dropdown-content">
+                        <a href="">Nutrition and Diet</a>
+                        <a href="">Training Programs and Techniques</a>
+                        <a href="">Supplements and Performance Enhancers</a>
+                        <a href="">Motivation and Mental Health</a>
+                        <a href="">Gym Fashion and Gear</a>
+                        <a href="">Recovery and Rest</a>
+                </div>
+            </div>
+    </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo">
+                <h2>Welcome to The Gym Bag, a leading provider of premium, organic supplements dedicated to promoting health and fitness through science-backed nutrition. Feel free to reach out to our friendly team if you have any questions!</h2><span class="close" id="xBtn">x</span>
+              </div>
+              <p><span class="close" id="closeBtn">Enjoy Shopping!</span></p>
+              </div>
+        </div>
+
+<!-- Was going to implement a login modal
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo">
+                <h2>Sign Up</h2>
+                <p>Email: <div class="emailInput"><input type="text" placeholder="john@example.com"></p>
+                    <p>Password: <div class="emailInput"><input type="password" placeholder="john@example.com"></p>
+                    <span class="close" id="xBtn">x</span>
+              </div>
+              </div>
+        </div> -->
+    
+    <section class="hero first">
+        <h4>About us</h4>
+        <p> Welcome to The Gym Bag, a leading provider of premium, organic supplements dedicated to promoting health and fitness through science-backed nutrition. At The Gym Bag, we believe in the power of nature to enhance well-being, and we are committed to offering products that are not only effective but also uphold the highest standards of quality.</p>
+            
+        <p>We are passionate about health, fitness, and the impact of nutrition on overall well-being. Our philosophy revolves around providing individuals with access to the finest organic ingredients that support a healthy lifestyle. We understand that what you put into your body matters, and that's why we are dedicated to crafting supplements that are pure, natural, and proven to deliver results.</p>
+        
+        <p>We source our ingredients from trusted organic farms to ensure the purity and potency of our products. Sustainability and ethical practices are at the core of our values, reflecting our commitment to both your health and the health of our planet.</p>
+
+    <section class="gridContainerInfo">
+            <div class="item item-1">
+                <button class="collapsible button1">Performance</button>
+                    <div class="content">
+        <p>Performance-based supplements offer a gateway to enhanced fitness and overall well-being. These specially formulated supplements provide a targeted approach to optimize physical and mental capabilities during workouts. Whether it's pre-workout boosters igniting energy levels, intra-workout supplements sustaining endurance, or post-workout recovery aids fostering muscle repair, performance-based supplements cater to specific needs, making performance-based supplements an invaluable addition to any fitness regimen.</p>
+                    </div>
+            </div>
+            <div class="item item-2">
+                <button class="collapsible button2">Vitamins</button>
+                    <div class="content">
+        <p>Vitamins play a pivotal role in optimizing fitness and overall health. Essential for numerous biochemical processes, vitamins act as catalysts in energy production, muscle function, and recovery. Vitamin C, for instance, aids collagen synthesis crucial for joint health, while vitamin D supports calcium absorption vital for bone strength. Adequate vitamin intake supports the immune system, preventing illnesses that could impede training consistency. Incorporating a balanced array of vitamins into a fitness regimen ensures sustained energy, resilience, and optimal performance.</p>
+                    </div>
+            </div>
+            <div class="item item-3">
+                <button class="collapsible button3">Apparel</button>
+                    <div class="content">
+        <p>Choosing proper gym attire is more than a style statement; it's a key factor in enhancing your workout experience. Appropriate gear provides comfort, flexibility, and breathability, reducing the risk of chafing and discomfort. Well-fitted apparel boosts confidence, optimizing performance by allowing freedom of movement and promoting focus during exercise.</p>
+                    </div>
+            </div>
+    </section>
+            
+            <h4>Scientifically Proven Formulas:</h4>
+            
+            <p>At The Gym Bag, we prioritize science and research. Our team of experts collaborates with leading researchers to develop formulations that are not only effective but are also rigorously tested. We take pride in our commitment to transparency, providing you with supplements that are backed by peer-reviewed studies and scientific evidence.</p>
+            
+            <h4>Product Range:</h4>
+            
+            <p>Explore our diverse range of supplements tailored to meet the unique needs of individuals pursuing fitness and well-being. Whether you're an athlete looking to enhance performance, a health-conscious individual seeking holistic wellness, or someone focused on weight management, we have a solution for you.</p>
+            
+        
+
+        <section class = "specialContainer"> 
+            <div class = "specialHeader">SPECIALS</div>   
+                <div class="gridContainerSpecials" id="specials">
+                        
+                    <div class="specials spec-1">
+                        <div class="hiddenPrices">$39.50</div>
+                    </div>
+                        
+                    <div class="specials spec-2">
+                        <div class="hiddenPrices">$49.50</div>
+                    </div>
+                
+                    <div class="specials spec-3">
+                        <div class="hiddenPrices">$29.50</div>
+                    </div>        
+                        
+                    <div class="specials spec-4">
+                        <div class="hiddenPrices">$15.50</div>
+                    </div>
+        
+                    <div class="specials spec-5">
+                        <div class="hiddenPrices">$19.50</div>
+                    </div>
+        
+                    <div class="specials spec-6">
+                        <div class="hiddenPrices">$29.50</div>
+                    </div>
+                </div>
+         </section> 
+        
+
+
+        <h4>Quality Assurance:</h4>
+            
+        <p>Quality is non-negotiable for us. Each batch of our supplements undergoes rigorous testing to ensure that it meets the highest standards for purity and potency. From raw ingredient sourcing to the final product, we maintain strict quality control measures to guarantee your satisfaction and safety.</p>
+            
+        <h4>Join Us on the Journey to Better Health:</h4>
+            
+        <p>Embark on a journey to a healthier and more vibrant life with The Gym Bag. We are not just a supplement company; we are your partners in achieving your health and fitness goals. Trust us to provide you with the finest organic, healthy, and peer-reviewed supplements for a better you.</p>
+            
+        <p>Welcome to a healthier, more vibrant life with The Gym Bag – where nature meets science for your well-being! </p>
+    </section>
+
+
+    <!-- <div class ="slideshow"> // had a slideshow but i couldnt work out the sizing
+        <div><img src="https://www.suppkings.com.au/wp-content/uploads/2023/11/SuppKings-Black-Friday-Deals-copy.png"></div>
+        <div><img src="https://www.suppkings.com.au/wp-content/uploads/2023/10/The-Truth-About-NET-Carbohydrates-1.png"></div>
+        <div><img src="https://www.suppkings.com.au/wp-content/uploads/2023/10/Halloween-Blog-Banner-1200x700-1.png"></div>
+    </div> -->
+
+    
+
+    <footer class="bottomNav">
+        <div class="bottomNavLinks">
+            <p><a href="#">About The Gym Bag</a></p>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Advertising Terms</a></p>
+            <p><a href="#">Privacy Terms of Use</a></p>
+            <p><a href="#">Ad Choices</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <span class="copyright">Copyright © 2023 TheGymBag Pty located. All rights reserved.</span>
+    </footer>
+
+</main>
+</body>
+</html>
