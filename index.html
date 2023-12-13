@@ -10,7 +10,7 @@
 <body>
 <main>
     <header class="header">
-        <div class="topLeft"><img src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo"></div>
+        <div class="topLeft"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo"></div>
         <div class="searchBar"><input type="text" placeholder="Search over 10,000 products"><button type="submit">Submit</button></div>
         <div class="topRight">
             <a id="signUpBtn" href="#">Sign Up</a>
@@ -23,42 +23,42 @@
         <div class = "dropdown">
             <div class="menuTitles">Categories</div>
             <div class="dropdown-content">
-                    <a href="">Protein Powder</a>
-                    <a href="">BCAA</a>
-                    <a href="">Creatine Monohydrate</a>
-                    <a href="">Weight Gainer</a>
-                    <a href="">Weight Loss</a>
-                    <a href="">Vitamins</a>
-                    <a href="">Gym Accessories</a>
-                    <a href="">Apparel</a>
+                    <a href="#">Protein Powder</a>
+                    <a href="#">BCAA</a>
+                    <a href="#">Creatine Monohydrate</a>
+                    <a href="#">Weight Gainer</a>
+                    <a href="#">Weight Loss</a>
+                    <a href="#">Vitamins</a>
+                    <a href="#">Gym Accessories</a>
+                    <a href="#">Apparel</a>
             </div>
         </div>
 
         <div class = "dropdown">
             <div class="menuTitles">Brands</div>
             <div class="dropdown-content">
-                    <a href="">FitFuel Labs</a>
-                    <a href="">MuscleVibe Nutrition</a>
-                    <a href="">PowerPulse Provisions</a>
-                    <a href="">FlexElite Wellness</a>
-                    <a href="">GymGuardian Nutrition</a>
-                    <a href="">IronZen Supplements</a>
-                    <a href="">PeakPulse Performance</a>
-                    <a href="">EpicStrength Essentials</a>
+                    <a href="#">FitFuel Labs</a>
+                    <a href="#">MuscleVibe Nutrition</a>
+                    <a href="#">PowerPulse Provisions</a>
+                    <a href="#">FlexElite Wellness</a>
+                    <a href="#">GymGuardian Nutrition</a>
+                    <a href="#">IronZen Supplements</a>
+                    <a href="#">PeakPulse Performance</a>
+                    <a href="#">EpicStrength Essentials</a>
             </div>
         </div>
 
         <div class = "dropdown">
             <div class="menuTitles">New</div>
             <div class="dropdown-content">
-                    <a href="">Protein Powder</a>
-                    <a href="">BCAA</a>
-                    <a href="">Creatine Monohydrate</a>
-                    <a href="">Weight Gainer</a>
-                    <a href="">Weight Loss</a>
-                    <a href="">Vitamins</a>
-                    <a href="">Gym Accessories</a>
-                    <a href="">Apparel</a>
+                    <a href="#">Protein Powder</a>
+                    <a href="#">BCAA</a>
+                    <a href="#">Creatine Monohydrate</a>
+                    <a href="#">Weight Gainer</a>
+                    <a href="#">Weight Loss</a>
+                    <a href="#">Vitamins</a>
+                    <a href="#">Gym Accessories</a>
+                    <a href="#">Apparel</a>
             </div>
         </div>
 
@@ -69,41 +69,82 @@
          <div class = "dropdown">
             <div class="menuTitles">Gym Talk</div>
                 <div class="dropdown-content">
-                        <a href="">Nutrition and Diet</a>
-                        <a href="">Training Programs and Techniques</a>
-                        <a href="">Supplements and Performance Enhancers</a>
-                        <a href="">Motivation and Mental Health</a>
-                        <a href="">Gym Fashion and Gear</a>
-                        <a href="">Recovery and Rest</a>
+                        <a href="#">Nutrition and Diet</a>
+                        <a href="#">Training Programs and Techniques</a>
+                        <a href="#">Supplements and Performance Enhancers</a>
+                        <a href="#">Motivation and Mental Health</a>
+                        <a href="#">Gym Fashion and Gear</a>
+                        <a href="#">Recovery and Rest</a>
                 </div>
             </div>
     </section>
 
+    <section>
         <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div class="modal" id="startUpModal">
             <div class="modal-content">
                 <div class="modal-body">
-                    <img src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo">
-                <h2>Welcome to The Gym Bag, a leading provider of premium, organic supplements dedicated to promoting health and fitness through science-backed nutrition. Feel free to reach out to our friendly team if you have any questions!</h2><span class="close" id="xBtn">x</span>
+                    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo">
+                <h2>Welcome to The Gym Bag, a leading provider of premium, organic supplements dedicated to promoting health and fitness through science-backed nutrition. Feel free to reach out to our friendly team if you have any questions!</h2>
+                <span class="close" id="xBtn1">x</span>
               </div>
               <p><span class="close" id="closeBtn">Enjoy Shopping!</span></p>
-              </div>
+            </div>
         </div>
-
-<!-- Was going to implement a login modal
-        <div id="loginModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo">
-                <h2>Sign Up</h2>
-                <p>Email: <div class="emailInput"><input type="text" placeholder="john@example.com"></p>
-                    <p>Password: <div class="emailInput"><input type="password" placeholder="john@example.com"></p>
-                    <span class="close" id="xBtn">x</span>
-              </div>
-              </div>
-        </div> -->
     
-    <section class="hero first">
+        <div class="signupModal" id="signingUpModal">
+            <div class="signupContent">
+                <div class="signupBody">
+                    <div class="signupLeft">
+                        <img class="logo" src="https://cdn-icons-png.flaticon.com/512/639/639237.png" alt="The Gym Bag Logo">
+                    </div>
+                    
+                    <form class="signupRight" id="registerForm">
+                        <fieldset>
+                            <legend><h2>Sign Up</h2></legend>
+
+                            <div class="form-row">
+                                <label for="name">Your Name</label>
+                                <div class="name-fields">
+                                    <input type="text" placeholder="First" id="nameInput" autofocus>
+                                    <input type="text" placeholder="Last">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <div class="name-fields">
+                                    <input type="text" placeholder="john@example.com" id="emailInput">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Password</label>
+                                <div class="name-fields">
+                                    <input type="password" placeholder="qwerty123!" id="passInput">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Confirm Password</label>
+                                <div class="name-fields">
+                                    <input type="password" placeholder="qwerty123!" id="passCheck">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <button type="submit">Submit</button>
+                            </div>
+                
+                        </fieldset>
+                    </form>
+                    <span class="close" id="xBtn2">x</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hero">
         <h4>About us</h4>
         <p> Welcome to The Gym Bag, a leading provider of premium, organic supplements dedicated to promoting health and fitness through science-backed nutrition. At The Gym Bag, we believe in the power of nature to enhance well-being, and we are committed to offering products that are not only effective but also uphold the highest standards of quality.</p>
             
