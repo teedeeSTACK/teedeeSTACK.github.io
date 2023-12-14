@@ -21,22 +21,35 @@ const modal = document.querySelector("#startUpModal");
 const xBtn1 = document.querySelector("#xBtn1");
 const closeBtn = document.querySelector("#closeBtn");
 
-xBtn1.onclick = function () {
+xBtn1.addEventListener('click', closesModalWindow);
+closeBtn.addEventListener('click', closesModalWindow);
+window.addEventListener('click', closesModalWindow);
+
+
+// updated javascript to have event listener, after review, this looks a lot more cleaner
+// and concise since it draws from the 1 function. Especially since they all eventListeners
+// do the same thing.
+
+function closesModalWindow() {
   modal.style.display = "none";
-  console.log("x button pressed");
-};
+}
 
-closeBtn.onclick = function () {
-    modal.style.display = "none";
-    console.log("close button pressed");
-};
+// xBtn1.onclick = function () {
+//   modal.style.display = "none";
+//   console.log("x button pressed");
+// };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    console.log("outside window clicked");
-  }
-};
+// closeBtn.onclick = function () {
+//     modal.style.display = "none";
+//     console.log("close button pressed");
+// };
+
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//     console.log("outside window clicked");
+//   }
+// };
 
 // code for signup modal
 
